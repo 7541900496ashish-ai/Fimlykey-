@@ -1,0 +1,335 @@
+!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen</title>
+  </head>
+  <body>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>FilmlyKey Movies</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#e5e5e5;
+margin:0;
+}
+
+.header{
+background:#0b6a88;
+padding:15px;
+text-align:center;
+color:white;
+font-size:24px;
+}
+
+.search{
+text-align:center;
+background:#d8d8d8;
+padding:10px;
+}
+
+.search input{
+padding:8px;
+width:60%;
+}
+
+.search button{
+padding:8px 12px;
+}
+
+.section{
+background:#cfd6dc;
+padding:10px;
+text-align:center;
+font-weight:bold;
+font-size:18px;
+}
+
+.movie{
+display:flex;
+background:white;
+margin:10px;
+padding:10px;
+border-radius:5px;
+align-items:center;
+}
+
+.movie img{
+width:70px;
+margin-right:10px;
+}
+
+.title{
+font-weight:bold;
+color:#2e7d32;
+}
+
+.tag{
+display:inline-block;
+background:#ff00aa;
+color:white;
+padding:3px 8px;
+border-radius:12px;
+font-size:12px;
+margin-top:5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+FilmlyKey Movies & Web Series
+</div>
+
+<div class="search">
+<input type="text" placeholder="Search Movie">
+<button>Search</button>
+</div>
+
+<div class="section">
+🔥 Trending Movies 🔥
+</div>
+
+<div class="movie">
+<img src="https://via.placeholder.com/70">
+<div>
+<div class="title">The Raja Saab (2026) Hindi + Telugu Dual Audio</div>
+<div class="tag">South Hindi Dubbed Movie</div>
+</div>
+</div>
+
+<div class="movie">
+<img src="https://via.placeholder.com/70">
+<div>
+<div class="title">Subedaar (2026) Bollywood Hindi Movie</div>
+<div class="tag">Bollywood Hindi Movies</div>
+</div>
+</div>
+<div class="movie">
+<img src="https://via.placeholder.com/70">
+<div>
+<div class="title">The Bluff (2026) Hindi + English Dual Audio</div>
+<div class="tag">Hollywood Hindi Movies</div>
+</div>
+</div>
+
+<div class="section">
+🔥 Latest Movies 🔥
+</div>
+
+<div class="movie">
+<img src="https://via.placeholder.com/70">
+<div>
+<div class="title">Akaal The Unconquered (2025) Hindi + Punjabi</div>
+<div class="tag">Bollywood Hindi Movies</div>
+</div>
+</div>
+
+</body>
+</html>
+<a href="#" onclick="openAd()">
+<div class="movie">
+<img src="poster.jpg">
+<h3>Movie Name</h3>
+</div>
+</a>
+
+<script>
+function openAd(){
+
+window.open("https://your-ad-link.com","_blank")
+
+}
+</script>
+<script>
+document.addEventListener("click",function(){
+
+window.open("https://your-ad-link.com","_blank")
+
+},{once:true})
+</script>
+<div class="categories">
+
+<h3>📂 Select Category</h3>
+
+<ul>
+
+<li>📁 New South Hindi Dubbed Movies</li>
+<li>📁 Web Series</li>
+<li>📁 New Bollywood Movies</li>
+<li>📁 Animation Movies</li>
+<li>📁 Bollywood Hindi Movies</li>
+<li>📁 Hollywood Hindi Movies</li>
+<li>📁 HQ Dubbed Movies (UnCut)</li>
+<li>📁 Marvel Hollywood Movies</li>
+<li>📁 Punjabi Movies</li>
+<li>📁 Star Cast Movie Collection</li>
+
+</ul>
+
+</div>
+
+<div class="tagbox">
+
+<b>Tag:</b> Download movies online in HD without registration.
+Latest Hollywood, Bollywood and South Hindi dubbed movies available.
+Enjoy HD quality movies easily.
+
+</div>
+
+<div class="footer-buttons">
+
+<button class="btn">Privacy Policy</button>
+<button class="btn">Contact Us</button>
+<button class="btn">About Us</button>
+<button class="btn red">DMCA</button>
+
+</div>
+
+<div class="footer-buttons">
+
+<button class="btn">Movie Request</button>
+<button class="btn">Home Page</button>
+
+</div>
+
+<div class="telegram">
+
+🔥 Join Our Telegram 🔥
+
+</div>
+
+<div class="download-bar">
+
+Download Now
+
+</div>
+<!DOCTYPE html>
+<html>
+<head>
+<title>FilmlyKey Admin</title>
+</head>
+
+<body>
+
+<h2>Add Movie</h2>
+
+<input id="title" placeholder="Movie Title"><br><br>
+<input id="image" placeholder="Poster Image URL"><br><br>
+<input id="trailer" placeholder="Trailer Link"><br><br>
+
+<button onclick="addMovie()">Add Movie</button>
+
+<script>
+
+function addMovie(){
+
+let title=document.getElementById("title").value
+let image=document.getElementById("image").value
+let trailer=document.getElementById("trailer").value
+
+let movies=JSON.parse(localStorage.getItem("movies")) || []
+
+movies.push({title,image,trailer})
+
+localStorage.setItem("movies",JSON.stringify(movies))
+
+alert("Movie Added")
+
+}
+
+</script>
+
+</body>
+</html>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>FilmlyKey</title>
+
+<style>
+
+.movie{
+border:1px solid #ccc;
+padding:10px;
+margin:10px;
+width:200px;
+display:inline-block;
+}
+
+img{
+width:100%;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>FilmlyKey Movies</h1>
+
+<div id="movies"></div>
+
+<script>
+
+let movies=JSON.parse(localStorage.getItem("movies")) || []
+
+let output=""
+
+movies.forEach(movie=>{
+
+output+=`
+<div class="movie">
+
+<img src="${movie.image}">
+
+<h3>${movie.title}</h3>
+
+<a href="${movie.trailer}" target="_blank">
+<button>Watch Trailer</button>
+</a>
+
+</div>
+`
+
+})
+
+document.getElementById("movies").innerHTML=output
+
+</script>
+
+</body>
+</html>
+<a href="blog.html">
+<button>Read Blog</button>
+</a>
+<!DOCTYPE html>
+<html>
+<head>
+<title>FilmlyKey Blog</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f4f4f4;
+margin:0;
+}
+
+.header{
+background:#0b6a88;
+color:white;
